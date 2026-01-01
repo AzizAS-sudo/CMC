@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Medical Center | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 font-sans">
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center space-x-2">
+            <div class="bg-blue-600 text-white p-2 rounded-lg font-bold">CMC</div>
+            <span class="text-xl font-bold text-slate-800">City Medical Center</span>
+        </div>
+        <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+            <a href="index.html" class="text-blue-600 border-b-2 border-blue-600">Home</a>
+            <a href="about.html" class="hover:text-blue-600">About Us</a>
+            <a href="contact.html" class="hover:text-blue-600">Contact</a>
+        </div>
+        <div class="space-x-2 flex">
+            <a href="doctor-login.html" class="hidden sm:block px-4 py-2 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50">Doctor Login</a>
+            <a href="patient-login.html" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Patient Portal</a>
+        </div>
+    </nav>
+
+    <header class="relative h-[550px] flex items-center justify-center text-white overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=2000" class="absolute inset-0 w-full h-full object-cover brightness-50" alt="Medical Center">
+        <div class="relative text-center px-4 max-w-3xl">
+            <h1 class="text-5xl font-extrabold mb-6 leading-tight">Advanced Medical Care <br> For Your Family</h1>
+            <p class="text-xl mb-8 opacity-90">City Medical Center provides 24/7 care with the region's top specialists.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html" class="bg-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 shadow-lg">Book Appointment</a>
+                <a href="about.html" class="bg-white/20 backdrop-blur-md px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/30">Our Doctors</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10">
+        <div class="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=600" class="h-56 w-full object-cover group-hover:scale-105 transition">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Primary Care</h3>
+                <p class="text-slate-500">Comprehensive health screenings and preventative medicine for all ages.</p>
+            </div>
+        </div>
+        <div class="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden">
+            <img src="https://eu-images.contentstack.com/v3/assets/blt0bbd1b20253587c0/blt658f73ec492f436c/651410b0f631d51f883097df/AdobeStock_212051964.jpeg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Modern Surgery</h3>
+                <p class="text-slate-500">Specialized surgical procedures using state-of-the-art robotic technology.</p>
+            </div>
+        </div>
+        <div class="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden">
+            <img src="https://kupperengineering.com/wp-content/uploads/2016/12/Depositphotos_16870945_m-2015_Pharma-Laboratory-Clean-Room_KEI-002-01.jpg" class="h-56 w-full object-cover group-hover:scale-105 transition">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Laboratory Services</h3>
+                <p class="text-slate-500">Fast and accurate diagnostic testing available 24 hours a day.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

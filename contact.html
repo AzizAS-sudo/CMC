@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | City Medical Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50">
+    <div class="max-w-6xl mx-auto py-12 px-6 grid md:grid-cols-2 gap-16">
+        <div>
+            <h1 class="text-3xl font-bold mb-6">Contact Us</h1>
+            <div class="space-y-6 text-slate-600">
+                <p>📍 <strong>Address:</strong> 123 Healthcare Ave, Metro City</p>
+                <p>📞 <strong>Phone:</strong> +1 (555) 012-3456</p>
+                <p>📧 <strong>Email:</strong> support@citymedical.com</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&q=80&w=600" class="mt-10 rounded-2xl shadow-lg">
+        </div>
+        
+        <form id="contactForm" class="bg-white p-10 rounded-3xl shadow-xl space-y-5 border border-slate-100">
+            <h2 class="text-2xl font-semibold mb-4">Send a Message</h2>
+            <input type="text" id="name" placeholder="Full Name" required class="w-full border-slate-200 border p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+            <input type="email" id="email" placeholder="Email Address" required class="w-full border-slate-200 border p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+            <textarea id="message" placeholder="How can we help?" required class="w-full border-slate-200 border p-3 rounded-lg h-32 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+            <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold hover:bg-blue-700 transition shadow-lg">Submit Request</button>
+            <div id="success" class="hidden text-center text-green-600 font-bold mt-4">✓ Message sent! We'll reply shortly.</div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('success').classList.remove('hidden');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
